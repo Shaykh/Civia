@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Civia.Test", "Civia.Test\Ci
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Civia.WebLocal", "Civia.WebLocal\Civia.WebLocal.csproj", "{F96D41CF-EC4F-4B39-A292-06065551EF68}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Civia.CommandApp", "Civia.CommandApp\Civia.CommandApp.csproj", "{76DF9CEE-A458-46DA-B27F-8DE7AE00E2AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F96D41CF-EC4F-4B39-A292-06065551EF68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F96D41CF-EC4F-4B39-A292-06065551EF68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F96D41CF-EC4F-4B39-A292-06065551EF68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76DF9CEE-A458-46DA-B27F-8DE7AE00E2AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76DF9CEE-A458-46DA-B27F-8DE7AE00E2AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76DF9CEE-A458-46DA-B27F-8DE7AE00E2AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76DF9CEE-A458-46DA-B27F-8DE7AE00E2AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
