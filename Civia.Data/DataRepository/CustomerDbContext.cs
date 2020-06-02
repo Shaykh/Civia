@@ -1,0 +1,17 @@
+﻿using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace Civia.Data.DataRepository
+{
+    public class CustomerDbContext : DbContext
+    {
+        public CustomerDbContext(DbContextOptions options) : base(options)
+        {
+        }
+
+        DbSet<Customer> Customer { get; set; }
+    }
+}
