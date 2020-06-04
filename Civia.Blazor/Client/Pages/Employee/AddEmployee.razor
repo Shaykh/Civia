@@ -1,0 +1,55 @@
+﻿@page "/employee/add"
+@inject HttpClient Http
+@inject Microsoft.AspNetCore.Components.NavigationManager navigation
+
+<h1>Nouvel Employé</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form>
+            <div class="form-group">
+                <label for="Name" class="control-label">Nom</label>
+                <input for="Name" class="form-control" @bind="@emp.Name" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Designation" class="control-label">Fonction</label>
+                <input for="Designation" class="form-control" @bind="@emp.Designation" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label">Email</label>
+                <input asp-for="Email" class="form-control" @bind="emp.Email" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Location" class="control-label">Adresse</label>
+                <input asp-for="Location" class="form-control" @bind="@emp.Location" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone" class="control-label">Téléphone</label>
+                <input asp-for="Phone" class="form-control" @bind="emp.PhoneNumber" />
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-default" @onclick="@(async () => await CreateEmployee())">Enregistrer</button>
+                <button class="btn" @onclick="@Cancel">Annuler</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@code {
+
+    Employee emp = new Employee();
+
+    protected async Task CreateEmployee()
+    {
+        await Http.PostAsJsonAsync("api/Employee", emp);
+
+        navigation.NavigateTo("/employee");
+
+    }
+
+    void Cancel()
+    {
+        navigation.NavigateTo("/employee");
+    }
+}

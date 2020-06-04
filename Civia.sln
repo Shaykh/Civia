@@ -5,11 +5,17 @@ VisualStudioVersion = 16.0.29324.140
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Civia.Data", "Civia.Data\Civia.Data.csproj", "{1B0BF4CC-1ABB-4D52-A475-FA5027798DFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Civia.Test", "Civia.Test\Civia.Test.csproj", "{FF6731CC-C931-4DF9-9F56-008A87D335D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Civia.Test", "Civia.Test\Civia.Test.csproj", "{FF6731CC-C931-4DF9-9F56-008A87D335D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Civia.WebLocal", "Civia.WebLocal\Civia.WebLocal.csproj", "{F96D41CF-EC4F-4B39-A292-06065551EF68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Civia.WebLocal", "Civia.WebLocal\Civia.WebLocal.csproj", "{F96D41CF-EC4F-4B39-A292-06065551EF68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Civia.CommandApp", "Civia.CommandApp\Civia.CommandApp.csproj", "{76DF9CEE-A458-46DA-B27F-8DE7AE00E2AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Civia.CommandApp", "Civia.CommandApp\Civia.CommandApp.csproj", "{76DF9CEE-A458-46DA-B27F-8DE7AE00E2AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Civia.Blazor.Server", "Civia.Blazor\Server\Civia.Blazor.Server.csproj", "{FC51E3C1-E818-458D-8163-6E9174419474}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Civia.Blazor.Client", "Civia.Blazor\Client\Civia.Blazor.Client.csproj", "{AD583EB8-4125-481C-92A1-5A5178BA5573}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Civia.Blazor.Shared", "Civia.Blazor\Shared\Civia.Blazor.Shared.csproj", "{8EBC3051-0AAC-4643-BE58-4C576E445A3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{76DF9CEE-A458-46DA-B27F-8DE7AE00E2AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76DF9CEE-A458-46DA-B27F-8DE7AE00E2AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76DF9CEE-A458-46DA-B27F-8DE7AE00E2AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC51E3C1-E818-458D-8163-6E9174419474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC51E3C1-E818-458D-8163-6E9174419474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC51E3C1-E818-458D-8163-6E9174419474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC51E3C1-E818-458D-8163-6E9174419474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD583EB8-4125-481C-92A1-5A5178BA5573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD583EB8-4125-481C-92A1-5A5178BA5573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD583EB8-4125-481C-92A1-5A5178BA5573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD583EB8-4125-481C-92A1-5A5178BA5573}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EBC3051-0AAC-4643-BE58-4C576E445A3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EBC3051-0AAC-4643-BE58-4C576E445A3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EBC3051-0AAC-4643-BE58-4C576E445A3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EBC3051-0AAC-4643-BE58-4C576E445A3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
