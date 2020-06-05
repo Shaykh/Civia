@@ -10,6 +10,6 @@ namespace Civia.Blazor.Server.Models
         public string Designation { get; set; }
         public string Email { get; set; }
         public string Location { get; set; }
-        public long PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
     }
 }

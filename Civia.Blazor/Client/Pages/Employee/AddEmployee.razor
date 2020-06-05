@@ -29,7 +29,7 @@
                 <input asp-for="Phone" class="form-control" @bind="emp.PhoneNumber" />
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-default" @onclick="@(async () => await CreateEmployee())">Enregistrer</button>
+                <button type="button" class="btn btn-default" @onclick="@(async () => await CreateEmployee())">Enregistrer</button>
                 <button class="btn" @onclick="@Cancel">Annuler</button>
             </div>
         </form>

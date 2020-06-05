@@ -3,7 +3,7 @@
 @inject Microsoft.AspNetCore.Components.NavigationManager navigation
 
 <h2>Suppression</h2>
-<h3>Comfirmez-vous la suppresion de l'employée avec l'id : @empId</h3>
+<h4>Confirmez-vous la suppresion de l'employée avec l'id : @empId</h4>
 <br />
 
 <div class="col-md-4">
@@ -30,8 +30,8 @@
         </tr>
     </table>
     <div class="form-group">
-        <input type="submit" value="Supprimer" @onclick="@(async () => await Delete())" class="btn btn-default" />
-        <input type="submit" value="Annuler" @onclick="@Cancel" class="btn" />
+        <input type="button" value="Supprimer" @onclick="@(async () => await Delete())" class="btn btn-default" />
+        <input type="button" value="Annuler" @onclick="@Cancel" class="btn" />
     </div>
 </div>
 
@@ -43,7 +43,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        emp = await Http.GetFromJsonAsync<Employee>("api/Employee/" + Convert.ToInt64(empId));
+        emp = await Http.GetFromJsonAsync<Employee>("api/Employee/" + Convert.ToInt32(empId));
     }
 
     protected async Task Delete()

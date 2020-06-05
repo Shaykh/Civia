@@ -29,8 +29,8 @@
                 <input asp-for="Phone" class="form-control" @bind="@emp.PhoneNumber" />
             </div>
             <div class="form-group">
-                <input type="submit" value="Enregistrer" @onclick="@(async () => await UpdateEmployee())" class="btn btn-default" />
-                <input type="submit" value="Annuler" @onclick="@Cancel" class="btn" />
+                <input type="button" value="Enregistrer" @onclick="@(async () => await UpdateEmployee())" class="btn btn-default" />
+                <input type="button" value="Annuler" @onclick="@Cancel" class="btn" />
             </div>
         </form>
     </div>
@@ -45,7 +45,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        emp = await Http.GetFromJsonAsync<Employee>("api/Employee" + Convert.ToInt64(empId));
+        emp = await Http.GetFromJsonAsync<Employee>("api/Employee/" + Convert.ToInt64(empId));
     }
 
     protected async Task UpdateEmployee()

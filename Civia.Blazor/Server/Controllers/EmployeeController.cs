@@ -47,7 +47,7 @@ namespace Civia.Blazor.Server.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<Employee> Details(int id)
+        public async Task<Employee> Details(long id)
         {
             return await _context.Employee.FindAsync(id);
             //return await _employee.GetEmployeeData(id);
@@ -65,9 +65,9 @@ namespace Civia.Blazor.Server.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task Delete(int id)
+        public async Task Delete(long id)
         {
-            Employee emp = _context.Employee.Find(id);
+            Employee emp = await _context.Employee.FindAsync(id);
             _context.Employee.Remove(emp);
             await _context.SaveChangesAsync();
         }

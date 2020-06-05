@@ -27,8 +27,7 @@ namespace Civia.Blazor.Server
         {
             var connexion = Configuration.GetConnectionString("DevBD");
             services.AddDbContextPool<ManagementContext>(options => options.UseSqlServer(connexion));
-            //
-            services.AddScoped<IManagementAccessLayer, ManagementAccessLayer>();
+            //services.AddScoped<IManagementAccessLayer, ManagementAccessLayer>();
 
             services.AddControllersWithViews();
             services.AddRazorPages();

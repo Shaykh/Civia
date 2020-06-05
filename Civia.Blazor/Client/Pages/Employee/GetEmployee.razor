@@ -1,7 +1,8 @@
-﻿@page  "/employee"
+﻿@page "/"
+@page  "/employee"
 @inject HttpClient Http
 
-<h1>Employées</h1>
+<h1>Employés</h1>
 
 <p>
     <a href="/employee/add">Ajouter un employé</a>
@@ -9,7 +10,7 @@
 
 @if (empList == null)
 {
-    <p><em>Chargement en cours...</em>></p>
+    <p><em>Chargement en cours...</em></p>
 }
 else
 {

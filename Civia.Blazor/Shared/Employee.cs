@@ -14,6 +14,6 @@ namespace Civia.Blazor.Shared.Models
         [Required]
         public string Location { get; set; }
         [Required]
-        public long PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
     }
 }
